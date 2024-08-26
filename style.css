@@ -1,0 +1,556 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap'); */
+
+/* TOUT CE QUE J'AI COMMENTE, C'ETOIT MA PRODUCTION A MOI, ELLE EST JUSTE, MAIS J'AI VOULU ME CONFORMER A CELLE DE SCRATCH  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --color1: rgb(251, 251, 251);
+  --color2: rgb(11, 11, 11);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  list-style: none;
+}
+/* Il est toujours préférable de voir les éléments qui ont tous un style en commun et de le mettre dans les réglages généraux */
+button {
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--color1);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color1);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background: var(--color1);
+  color: var(--color2);
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* Il faudrait éviter que la nav s'étire un peu trop à un moment donné. Donc pour celà il faudrait lui donner une largeur maximale  */
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  cursor: pointer;
+  position: relative;
+  transform: 0.2s;
+}
+nav li:first-child {
+  color: rgb(126, 33, 192);
+}
+nav li:first-child::before {
+  content: "";
+  width: 100%;
+  background: rgb(126, 33, 192);
+  position: absolute;
+  height: 5px;
+  transform: translateY(-19px);
+}
+nav li:hover::before {
+  content: "";
+  width: 100%;
+  background: rgb(126, 33, 192);
+  position: absolute;
+  height: 5px;
+  transform: translateY(-19px);
+}
+/* pour que ledernier enfant n'ai pas le before  */
+nav li:last-child:before {
+  background: none;
+}
+#language {
+  background: rgba(145, 145, 145, 0.337);
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+header {
+  background: url(./assets/img/bg.jpg) center/cover fixed;
+  padding: 60px;
+  /* display: flex;
+  justify-content: center; */
+}
+.main-header {
+  /* margin: 85px; */
+}
+#logo img {
+  display: block;
+  margin: auto;
+  /* width: 90%; */
+}
+.main-header h1 {
+  text-transform: uppercase;
+  color: var(--color1);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 30px 0 35px;
+}
+.main-header button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+}
+/* pour faire décaler le chevron  */
+.main-header i {
+  transform: translateX(5px);
+}
+
+.header-text {
+  padding: 45px 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  line-height: 25px;
+  /* pour que le texte ne s'étende pas */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.header-text p {
+  font-size: 0.8rem;
+  font-weight: 800;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon-part {
+  background: var(--color2);
+  color: var(--color1);
+  padding: 65px 0;
+}
+.icon-part-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  /* max-width: 1100px; */
+}
+.list-icon-part {
+  width: 20%;
+
+}
+
+#lip-logo {
+  margin-bottom: 30px;
+}
+
+#lip-logo img {
+  display: block;
+  /* margin: 0 auto 30px; */
+  margin: 0 auto;
+  width: 90%;
+}
+.list-icon-part h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.list-icon-part p {
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#renseignement {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 20px;
+  font-size: 0.5rem;
+}
+
+.news-part {
+  background: rgba(210, 210, 210, 0.147);
+  padding: 70px 0 100px;
+}
+.header-news {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 0 50px;
+}
+.left-part h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.left-part p {
+  font-size: 0.5rem;
+  font-weight: 800;
+}
+.right-part {
+  margin: auto 0;
+}
+.right-part button {
+  display: block;
+  margin: auto 0;
+  border: 1px solid var(--color2);
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  font-size: 0.5rem;
+  font-weight: 800;
+  color: var(--color2);
+  transition: 0.2s ease-in-out;
+}
+.right-part button:hover {
+  background: var(--color2);
+  color: var(--color1);
+}
+.right-part .fa-solid {
+  margin-left: 5px;
+  font-size: 0.4rem;
+  font-weight: 900;
+}
+
+/* Il y a une possibilité de sélectionner une div malgré qu'on ne lui a pas mis de class ou de id. Pour celà on prend le parent suivi de > puis div  */
+
+/* Il est préférable de mettre dans le css object-fit : cover quand on veut modifier une image venant du html  */
+.main-news {
+  width: 70%;
+  margin: 0 auto;
+}
+.main-new-container {
+  /* width: 70%; */
+  display: flex;
+  justify-content: space-around;
+  /* margin: 0 auto; */
+}
+.new {
+  width: 20%;
+  position: relative;
+}
+#mn-pic img {
+  width: 100%;
+  /* display: block;
+    margin: 0 auto; */
+  box-shadow: 0px 0px 7px 0px #8b8b8b;
+  margin-bottom: 10px;
+}
+.new h4 {
+  font-size: 0.6rem;
+  /* text-align: center; */
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.new p {
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+.link {
+  position: absolute;
+  bottom: 0;
+}
+.link a {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(126, 33, 192);
+}
+.link a:visited {
+  color: rgb(126, 33, 192);
+}
+.link i{
+  transform: translateX(5px);
+  font-size: 0.4rem;
+  font-weight: 900;
+}
+
+.contact {
+  padding: 60px 0 40px;
+}
+.contact-container {
+  width: 100%;
+}
+.contact-list {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.contact-list::after {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  width: 80%;
+  background: rgb(234, 234, 234);
+  bottom: -20px;
+}
+.list {
+  width: 20%;
+}
+#contact-img {
+  height: 100%;
+}
+#contact-img img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+.list h5 {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.list li {
+  font-size: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.list li a {
+  color: rgb(126, 33, 192);
+}
+.list li a:visited {
+  color: rgb(126, 33, 192);
+}
+.list p {
+  font-size: 0.5rem;
+  font-weight: 800;
+  /* margin-bottom: 10px; */
+}
+.list a {
+  font-size: 0.5rem;
+  font-weight: 800;
+  color: rgb(126, 33, 192);
+}
+.list h6 {
+  font-size: 0.5rem;
+  margin-bottom: 5px;
+}
+.network {
+  margin-top: 15px;
+  margin-bottom: 0 !important;
+}
+.footer-logos i {
+  font-size: 0.5rem;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+.contact-medias {
+  margin: 50px auto 0;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.medias-text h3 {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.medias-text p {
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+.medias-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.medias-logos img {
+  width: 50px;
+}
+
+.partenaires {
+  background: var(--color2);
+  padding: 10px 0 20px;
+}
+.partenaires h3 {
+  color: var(--color1);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  /* margin-bottom: 20px; */
+}
+.partenaires ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 20px auto 0;
+}
+.partenaires li img {
+  height: 15px;
+}
+
+/* ********************MEDIA QUERIES************************ */
+@media screen and (max-width: 1047px) {
+  .icon-part-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav li {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  nav li {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #logo img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    display: none;
+  }
+}
+
+/* Pour dire à des éléments que lorsque vous n'avez plus de place, allez à la ligne, on dit : flex-wrap : wrap  */
+
+@media screen and (max-width: 400px) {
+  /* header {
+    background: url(./assets/img/bg.jpg) center/cover no-repeat;
+    background-size: 100%;
+  } */
+  header {
+    padding: 0 0 30px;
+  }
+  .main-header {
+    margin: 0;
+  }
+  #logo {
+    padding-top: 50px;
+  }
+  #logo img {
+    width: 100%;
+  }
+  .main-header h1 {
+    font-size: 1rem;
+  }
+  .main-header button {
+    margin-bottom: 50px;
+  }
+
+  /* .header-text p {
+    width: 90%;
+    font-size: 0.6rem;
+  } */
+
+  .icon-part-container {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 80px 0 0;
+  }
+  .list-icon-part {
+    width: auto;
+    padding-bottom: 60px;
+  }
+  #lip-logo img  {
+    width: 50%;
+  }
+
+  .news-part {
+    padding: 70px 0 40px;
+  }
+  .header-news {
+    display: block;
+    width: 95%;
+  }
+  .left-part h4 {
+    text-align: center;
+  }
+  .right-part button{
+    margin: 10px auto;
+  }
+  .main-news {
+    width: 90%;
+  }
+  .main-new-container {
+    display: block;
+    margin: 0 auto;
+  }
+  .new {
+    width: auto;
+    margin-bottom: 70px;
+  }
+  #mn-pic {
+    margin-bottom: 10px;
+  }
+  #mn-pic img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
+  .link {
+    bottom: -35px;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .partenaires {
+    padding: 20px 20px;
+  }
+  .partenaires ul {
+    width: auto;
+    margin: 10px auto 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .partenaires li img {
+    /* height: 8px; */
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main-header h1 {
+    font-size: 0.8rem;
+  }
+  .main-header button {
+    padding: 15px 10px;
+    font-size: 0.6rem;
+  }
+}

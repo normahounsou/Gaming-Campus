@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming-Campus</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Afin d'avoir les icones, il faut aller dans cdn font awesome et copier -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" href="./assets/img/logo-gc-footer.jpg" />
+  </head>
+  <body>
+    <nav>
+      <!-- On n'a pas besoin d'une div pour ici -->
+      <ul>
+        <li>Accueil</li>
+        <li>Business School</li>
+        <li>Ecole Export</li>
+        <li>Cours de Jeux vidéo</li>
+        <li>le campus</li>
+        <li>newsroom</li>
+        <li>parents</li>
+        <!-- afin d'identifier le bouton -->
+        <li id="language">FR | EN</li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="main-header">
+        <div id="logo">
+          <img src="./assets/img/logo-gc-hero.png" alt="logo" />
+        </div>
+        <h1>passion. professionnalisme. performance.</h1>
+        <button>
+          gaming campus en video <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="header-text">
+      <p>
+        Imaginé par des professionnels de jeux vidéos et de l'éducation, Gaming
+        Campus est un lieu unique pour révéler les talents et développer les
+        compétences.
+      </p>
+    </div>
+
+    <section class="icon-part">
+      <div class="icon-part-container">
+        <div class="list-icon-part">
+          <!-- Je pensais mettre des id pour pointer les images, mais je devrais mettre ces images dans une div -->
+          <div id="lip-logo">
+            <img src="./assets/img/logo-gbs-home.png" alt="logo GBS" />
+          </div>
+          <h3>Gaming Business School</h3>
+          <p>
+            formez-vous dans la première école de management dédiée aux enjeux
+            et métiers du jeu vidéo.
+          </p>
+          <button id="renseignement">En savoir plus</button>
+        </div>
+        <div class="list-icon-part">
+          <div id="lip-logo">
+            <img
+              src="./assets/img/logo-ga-home.png"
+              alt="logo gaming academy"
+            />
+          </div>
+          <h3>Gaming academy</h3>
+          <p>
+            Entrainez-vous dans des conditions optimales pour devenir esportif
+            professionnel.
+          </p>
+          <button id="renseignement">En savoir plus</button>
+        </div>
+        <div class="list-icon-part">
+          <div id="lip-logo">
+            <img src="./assets/img/logo-gg-home.png" alt="logo gaming guru" />
+          </div>
+          <h3>Gaming guru</h3>
+          <p>
+            Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux
+            vidéos préférés
+          </p>
+          <button id="renseignement">En savoir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-part">
+      <div class="header-news">
+        <div class="left-part">
+          <h4>Les news du campus</h4>
+          <p>
+            Suivez l'actualité de Gaming Campus, de G.Guru, G.B.S et G.Academy.
+          </p>
+        </div>
+        <div class="right-part">
+          <button>la newsroom <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+
+      <div class="main-news">
+        <div class="main-new-container">
+          <div class="new">
+            <div id="mn-pic">
+              <img
+                src="./assets/img/ri8decembre.jpg"
+                alt="réunion d'information"
+              />
+            </div>
+            <h4>Réunion d'information 19 décembre</h4>
+            <p>
+              Venez à notre rencontre lors de cette réunion d'information.
+              Témoignages des étudiants / Ateliers sur la pédagodie par projet
+              "Active Learning by Gaming Campus" / Découverte des locaux /
+              Rencontre avec l'équipe pédagogique / Questions réponses.
+            </p>
+            <div class="link">
+              <a href="www.google.com"
+                >Sur inscription <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="new">
+            <div id="mn-pic">
+              <img src="./assets/img/pgw18home.jpg" alt="pgw 2018" />
+            </div>
+            <h4>Paris Games Week 2018 et réunions d'information</h4>
+            <p>
+              Pendant tout le mois d'octobre venez rencontrer l'équipe
+              pédagogique du Gaming Campus : Campus Lyon et stand Gaming Campus
+              à la PGW18.
+            </p>
+            <div class="link">
+              <a href="#"
+                >Lire la suite <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="new">
+            <div id="mn-pic">
+              <img
+                src="./assets/img/inauguration_gaming_campus_photo.jpg"
+                alt="inauguration GC Lyon"
+              />
+            </div>
+            <h4>Inauguration Gaming Campus Lyon</h4>
+            <p>
+              Revivez l'inauguration du Gaming Campus Lyon avec 180 invités, les
+              grandes annonces de la rentrée, les photos de la soirée et les
+              premières dates de réunions d'information.
+            </p>
+            <div class="link">
+              <a href="#"
+                >Lire la suite <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-list">
+          <div class="list">
+            <div id="contact-img">
+              <img src="./assets/img/logo-gc-footer.jpg" alt="logo" />
+            </div>
+          </div>
+
+          <div class="list">
+            <h5>Infos pratiques</h5>
+            <ul>
+              <li><a href="#">Gaming Business School</a></li>
+              <li><a href="#">Gaming Academy</a></li>
+              <li><a href="#">Gaming Guru</a></li>
+              <li><a href="#">Recrutement</a></li>
+              <li><a href="#">Investisseurs</a></li>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">C.G.U</a></li>
+            </ul>
+          </div>
+
+          <div class="list">
+            <h5>Parents</h5>
+            <p>
+              Questions / réponses pour vous accompagner dans votre réflexion
+              sur l'orientation de votre enfant et le choix de Gaming Campus
+            </p>
+            <a href="#">En savoir plus</a>
+          </div>
+
+          <div class="list">
+            <h5>Nous contacter</h5>
+            <h6>Tél. 04 28 29 81 03</h6>
+            <h6>contact@gamingcampus.fr</h6>
+            <h5 class="network">Nous suivre</h5>
+            <div class="footer-logos">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>2018 Gaming Campus.</p>
+            <p>Tout droits réservés.</p>
+          </div>
+        </div>
+
+        <div class="contact-medias">
+          <div class="medias-text">
+            <h3>Ils parlent de nous</h3>
+            <p>Voir toutes les retombées presse.</p>
+          </div>
+          <div class="medias-logos">
+            <span>
+              <img src="./assets/img/figaro.png" alt="figaro" />
+            </span>
+            <span>
+              <img src="./assets/img/challenges.png" alt="challenges" />
+            </span>
+            <span>
+              <img src="./assets/img/leparisien.png" alt="le parisien" />
+            </span>
+            <span>
+              <img src="./assets/img/lemonde.png" alt="le monde" />
+            </span>
+            <span>
+              <img src="./assets/img/progres.png" alt="le progrès" />
+            </span>
+            <span>
+              <img src="./assets/img/echos.png" alt="les echos" />
+            </span>
+            <span>
+              <img src="./assets/img/bfm.png" alt="BFM tv" />
+            </span>
+            <span>
+              <img src="./assets/img/lepoint.png" alt="l'équipe" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="partenaires">
+      <h3>Partenaires officiels</h3>
+      <!-- Je pense que les ul n'ont pas besoin de div, bon je pense hein, on verra -->
+      <ul>
+        <li>
+          <img src="./assets/img/apollo.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/chiliz.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/omen.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/joa.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/zol.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/maxonomic.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/credit-mutuel.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/talent-web.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/ubisoft.png" alt="" />
+        </li>
+        <li>
+          <img src="./assets/img/vitality.png" alt="" />
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
